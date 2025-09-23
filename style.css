@@ -14,10 +14,48 @@ body {
     flex-direction: column;
     width: 80%;
     max-width: 600px;
-    height: 500px;
+    min-height: 500px;
     padding: 24px;
 }
 
 input[type="text"], input[type="email"], select, textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
+label[for="firstName"], input#firstName, label[for="lastName"], input#lastName {
+    display: block;
+    width: 92%;
+    margin: 0;
+}
+
+/* fixa så att firstname och lastname hamnar brevid varandra*/
+.form label[for="firstName"],
+.form input#firstName,
+.form label[for="lastName"],
+.form input#lastName {
+    display: block;
+}
+.form .name-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* två lika breda kolumner */
+    gap: 10px; /* mellanrum mellan kolumnerna */
+}
+
+textarea {
+    min-height: 100px;
+}
+
+button {
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    background: steelblue;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 25px;
 }
