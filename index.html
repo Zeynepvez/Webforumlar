@@ -23,16 +23,19 @@
       <div>
       <label for="firstName">First name</label>
       <input id="firstName" name="firstName" type="text" placeholder="Skriv ditt förnamn" required>
+        <span class="error-message" id="error-firstName"></span>
     </div>
     <div>
       <label for="lastName">Last name</label>
       <input id="lastName" name="lastName" type="text" placeholder="Skriv ditt efternamn" required>
+      <span class="error-message" id="error-lastName"></span>
     </div>
     </div>
 
 
     <label for="email">Email Adress</label>
     <input id="email" name="email" type="text" placeholder="Skriv din email" required>
+    <span class="error-message" id="error-email"></span>
 
     <label for="query">Query Type</label>
     <select id="query" name="query">
@@ -41,7 +44,8 @@
     </select>
 
       <label for="message">Message</label>
-      <textarea id="message" name="message" type="text" required></textarea>
+      <textarea id="message" name="message" type="text" placeholder="Skriv ett meddelande"></textarea>
+      <span class="error-message" id="error-message"></span>
 
     <button type="Submit">Submit</button>
   </form>
@@ -66,5 +70,7 @@
    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
    Coded by <a href="#">Your Name Here</a>.
  </div> -->
+<script src="script.js"></script>
+
 </body>
 </html>

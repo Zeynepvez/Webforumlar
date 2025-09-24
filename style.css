@@ -16,6 +16,7 @@ body {
     max-width: 600px;
     min-height: 500px;
     padding: 24px;
+    font-family: "Arial";
 }
 
 input[type="text"], input[type="email"], select, textarea {
@@ -30,6 +31,7 @@ label[for="firstName"], input#firstName, label[for="lastName"], input#lastName {
     display: block;
     width: 92%;
     margin: 0;
+    margin-bottom: 10px;
 }
 
 /* fixa så att firstname och lastname hamnar brevid varandra*/
@@ -47,8 +49,22 @@ label[for="firstName"], input#firstName, label[for="lastName"], input#lastName {
 
 textarea {
     min-height: 100px;
+    font-family: "Arial";
+}
+/*
+input.error, textarea.error {
+    border: 2px solid red;
+}*/
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
 }
 
+.error {
+    border: 1px solid red;
+}
 button {
     padding: 12px;
     border-radius: 6px;
